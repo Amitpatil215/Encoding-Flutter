@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "7681083693",
+    "firebase_url": "https://encoding-flutter.firebaseio.com",
+    "project_id": "encoding-flutter",
+    "storage_bucket": "encoding-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7681083693:android:2bda4908ca48e8d9a8aba4",
+        "android_client_info": {
+          "package_name": "com.hello.jiitms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7681083693-vpc0lo3bjfpi7pvkf83qcpf26eesupdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfZiv9ANmsXZWyGcJuCiE1ML4aXE_Yj0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7681083693-vpc0lo3bjfpi7pvkf83qcpf26eesupdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

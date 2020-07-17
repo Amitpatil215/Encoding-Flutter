@@ -1,16 +1,27 @@
-# jiitms
+# Encoding Flutter
 
-A new Flutter application.
+It's a Flutter Widget Guide Application
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+Run main.dart file
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features 
+
+```
+1. Source Code
+2. Preview
+3. Flow Chart
+4. Shortened Widget list
+5. Tutor's Talk
+6. Flutter Doc's
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.

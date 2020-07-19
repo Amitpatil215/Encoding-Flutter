@@ -20,6 +20,8 @@ Run main.dart file
 5. Tutor's Talk
 6. Flutter Doc's
 ```
+## Screenshots
+<img src="read_me_screenshot/1.png" height=400> <img src="read_me_screenshot/2.png" height=400> <img src="read_me_screenshot/3.png" height=400> <img src="read_me_screenshot/4.png" height=400> <img src="read_me_screenshot/5.png" height=400> <img src="read_me_screenshot/6.png" height=400> <img src="read_me_screenshot/7.png" height=400> <img src="read_me_screenshot/8.png" height=400>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

@@ -1,8 +1,8 @@
 //import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_admob/flutter_native_admob.dart';
-import 'package:flutter_native_admob/native_admob_controller.dart';
-import 'package:flutter_native_admob/native_admob_options.dart';
+// import 'package:flutter_native_admob/flutter_native_admob.dart';
+// import 'package:flutter_native_admob/native_admob_controller.dart';
+// import 'package:flutter_native_admob/native_admob_options.dart';
 import 'package:jiitms/explore_pages/explore_challenges.dart';
 import 'package:jiitms/explore_pages/explore_short.dart';
 import 'package:jiitms/explore_pages/explore_tutorstalk.dart';
@@ -13,7 +13,7 @@ class ExploreNow extends StatefulWidget {
 }
 class _ExploreNowState extends State<ExploreNow> {
   //native ad
-  final _nativeAdController = NativeAdmobController();
+  //final _nativeAdController = NativeAdmobController();
   //native ad
   @override
   Widget build(BuildContext context) {
@@ -132,22 +132,22 @@ class _ExploreNowState extends State<ExploreNow> {
             height: 200,
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.only(bottom: 20.0),
-            child: NativeAdmob(
-              // Your ad unit id
-              adUnitID:"ca-app-pub-3681380281121300/7198096184",
-              //adUnitID:NativeAd.testAdUnitId,
-              controller: _nativeAdController,
-              type: NativeAdmobType.full,
-              options: NativeAdmobOptions(
-                adLabelTextStyle: NativeTextStyle(
-                  backgroundColor: Colors.pink
-                ),
-              ),
-              error: Container(
+            // child: NativeAdmob(
+            //   // Your ad unit id
+            //   adUnitID:"ca-app-pub-3681380281121300/7198096184",
+            //   //adUnitID:NativeAd.testAdUnitId,
+            //   controller: _nativeAdController,
+            //   type: NativeAdmobType.full,
+            //   options: NativeAdmobOptions(
+            //     adLabelTextStyle: NativeTextStyle(
+            //       backgroundColor: Colors.pink
+            //     ),
+            //   ),
+            //   error: Container(
 
-              ),
+            //   ),
 
-            ),
+            // ),
           )
         ]
       ),

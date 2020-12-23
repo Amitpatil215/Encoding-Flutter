@@ -1,8 +1,8 @@
-import 'package:firebase_admob/firebase_admob.dart';
+// import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_admob/flutter_native_admob.dart';
-import 'package:flutter_native_admob/native_admob_controller.dart';
-import 'package:flutter_native_admob/native_admob_options.dart';
+// import 'package:flutter_native_admob/flutter_native_admob.dart';
+// import 'package:flutter_native_admob/native_admob_controller.dart';
+// import 'package:flutter_native_admob/native_admob_options.dart';
 class ShortNotes extends StatefulWidget {
   @override
   _ShortNotesState createState() => _ShortNotesState();
@@ -10,7 +10,7 @@ class ShortNotes extends StatefulWidget {
 
 class _ShortNotesState extends State<ShortNotes> {
   //native ad
-  final _nativeAdController = NativeAdmobController();
+  // final _nativeAdController = NativeAdmobController();
   //native ad
   @override
   Widget build(BuildContext context) {
@@ -89,17 +89,17 @@ class _ShortNotesState extends State<ShortNotes> {
               height: 200,
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.only(bottom: 20.0),
-              child: NativeAdmob(
-                // Your ad unit id
-                adUnitID:"ca-app-pub-3681380281121300/7198096184",
-                //adUnitID:NativeAd.testAdUnitId,
-                controller: _nativeAdController,
-                type: NativeAdmobType.full,
-                options: NativeAdmobOptions(
-                  showMediaContent: true,
-                  headlineTextStyle: NativeTextStyle(color: Colors.white),
-                ),
-              ),
+              // child: NativeAdmob(
+              //   // Your ad unit id
+              //   adUnitID:"ca-app-pub-3681380281121300/7198096184",
+              //   //adUnitID:NativeAd.testAdUnitId,
+              //   controller: _nativeAdController,
+              //   type: NativeAdmobType.full,
+              //   options: NativeAdmobOptions(
+              //     showMediaContent: true,
+              //     headlineTextStyle: NativeTextStyle(color: Colors.white),
+              //   ),
+              // ),
             )
           ],
         ),

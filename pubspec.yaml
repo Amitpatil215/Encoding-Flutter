@@ -17,10 +17,10 @@ environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
 
 dependencies:
-  firebase_admob: any
-  firebase_auth: any
-  cloud_firestore: any
-  firebase_analytics: any
+  # firebase_admob: any
+  # firebase_auth: any
+  # cloud_firestore: any
+  # firebase_analytics: any
   flutter:
     sdk: flutter
 
@@ -35,7 +35,7 @@ dependencies:
   webview_flutter: any
   loading: ^1.0.2
   google_nav_bar: ^2.2.0
-  flutter_native_admob: ^2.1.0
+  # flutter_native_admob: ^2.1.0
 
 
   

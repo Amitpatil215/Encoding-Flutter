@@ -1,9 +1,9 @@
-import 'package:firebase_admob/firebase_admob.dart';
+// import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_admob/flutter_native_admob.dart';
-import 'package:flutter_native_admob/native_admob_controller.dart';
-import 'package:flutter_native_admob/native_admob_options.dart';
+// import 'package:flutter_native_admob/flutter_native_admob.dart';
+// import 'package:flutter_native_admob/native_admob_controller.dart';
+// import 'package:flutter_native_admob/native_admob_options.dart';
 import 'package:jiitms/pages/home_page.dart';
 import 'package:jiitms/database/listofcontent.dart';
 import 'package:jiitms/pages/redirected_page.dart';
@@ -15,36 +15,36 @@ class EarlyRedirectedPage extends StatefulWidget {
 }
 class _EarlyRedirectedPageState extends State<EarlyRedirectedPage> {
   //native ad
-  final _nativeAdController = NativeAdmobController();
+  //final _nativeAdController = NativeAdmobController();
   //native ad
   //ad----
- static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-    keywords: <String>[],
-    childDirected: false,
-    testDevices: <String>[], // Android emulators are considered test devices
-  );
-  InterstitialAd myInterstitial = InterstitialAd(
-    // Replace the testAdUnitId with an ad unit id from the AdMob dash.
-    //adUnitId:"ca-app-pub-3681380281121300/3101577690",
-    adUnitId:InterstitialAd.testAdUnitId,
-    targetingInfo: targetingInfo,
-    listener: (MobileAdEvent event) {
-      print("InterstitialAd event is $event");
-    },
-  );
+ //static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+  //   keywords: <String>[],
+  //   childDirected: false,
+  //   testDevices: <String>[], // Android emulators are considered test devices
+  // );
+  // InterstitialAd myInterstitial = InterstitialAd(
+  //   // Replace the testAdUnitId with an ad unit id from the AdMob dash.
+  //   //adUnitId:"ca-app-pub-3681380281121300/3101577690",
+  //   adUnitId:InterstitialAd.testAdUnitId,
+  //   targetingInfo: targetingInfo,
+  //   listener: (MobileAdEvent event) {
+  //     print("InterstitialAd event is $event");
+  //   },
+  // );
 //ad___
   //invoking all the list for its attributes
   final List<Content> contentList=Content.getTitle();
 
   @override
   void initState() {
-    FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~4830109259");
+  //  FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~4830109259");
     super.initState();
-    myInterstitial..load();
+  //  myInterstitial..load();
   }
   @override
   void dispose() {
-    myInterstitial?.dispose();
+  //  myInterstitial?.dispose();
     super.dispose();
   }
 
@@ -72,7 +72,7 @@ class _EarlyRedirectedPageState extends State<EarlyRedirectedPage> {
             IconButton(
                 icon:Icon(Icons.home,size: 25,),
                 onPressed: (){
-                  myInterstitial..show();
+              //    myInterstitial..show();
                   Navigator.push(context,MaterialPageRoute(builder:(context)=>HomePage()));
                 })
           ],
@@ -113,7 +113,7 @@ class _EarlyRedirectedPageState extends State<EarlyRedirectedPage> {
                                  Navigator.push(context,MaterialPageRoute(builder:(context)=>RedirectedPage()));
                                },
                               onLongPress: (){
-                                 myInterstitial..show();
+                         //        myInterstitial..show();
                               },
                              )
                             ]

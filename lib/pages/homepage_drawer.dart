@@ -1,4 +1,4 @@
-import 'package:firebase_admob/firebase_admob.dart';
+// import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -8,23 +8,23 @@ class DrawerClass extends StatefulWidget {
 }
 class _DrawerClassState extends State<DrawerClass> {
   //ad----
-  static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-    keywords: <String>[],
-    childDirected: false,
-    testDevices: <String>[], // Android emulators are considered test devices
-  );
-  InterstitialAd myInterstitial = InterstitialAd(
-    // Replace the testAdUnitId with an ad unit id from the AdMob dash.
-    adUnitId:"ca-app-pub-3681380281121300/3101577690",
-    targetingInfo: targetingInfo,
-    listener: (MobileAdEvent event) {
-      print("InterstitialAd event is $event");
-    },
-  );
+  // static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+  //   keywords: <String>[],
+  //   childDirected: false,
+  //   testDevices: <String>[], // Android emulators are considered test devices
+  // );
+  // InterstitialAd myInterstitial = InterstitialAd(
+  //   // Replace the testAdUnitId with an ad unit id from the AdMob dash.
+  //   adUnitId:"ca-app-pub-3681380281121300/3101577690",
+  //   targetingInfo: targetingInfo,
+  //   listener: (MobileAdEvent event) {
+  //     print("InterstitialAd event is $event");
+  //   },
+  // );
 //ad___
   @override
   void initState() {
-    FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~9841503606");
+   // FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~9841503606");
     super.initState();
     //myInterstitial..load();
   }

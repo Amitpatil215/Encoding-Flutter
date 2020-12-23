@@ -1,37 +1,37 @@
-import 'package:firebase_admob/firebase_admob.dart';
+// import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_admob/flutter_native_admob.dart';
-import 'package:flutter_native_admob/native_admob_controller.dart';
+// import 'package:flutter_native_admob/flutter_native_admob.dart';
+// import 'package:flutter_native_admob/native_admob_controller.dart';
 class ExploreChallenges extends StatefulWidget {
   @override
   _ExploreChallengesState createState() => _ExploreChallengesState();
 }
 class _ExploreChallengesState extends State<ExploreChallenges> {
   //native ad
-  final _nativeAdController = NativeAdmobController();
+  //final _nativeAdController = NativeAdmobController();
   //native ad
 
   //ad----
-  static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-    keywords: <String>[],
-    childDirected: false,
-    testDevices: <String>[], // Android emulators are considered test devices
-  );
+  //static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+  //   keywords: <String>[],
+  //   childDirected: false,
+  //   testDevices: <String>[], // Android emulators are considered test devices
+  // );
 
-  BannerAd myBanner = BannerAd(
+ // BannerAd myBanner = BannerAd(
     // Replace the testAdUnitId with an ad unit id from the AdMob dash.
-   adUnitId:'ca-app-pub-3681380281121300/7371995196',
-    size: AdSize.fullBanner,
-    targetingInfo: targetingInfo,
-    listener: (MobileAdEvent event) {
-      print("BannerAd event is $event");
-    },
-  );
+  // adUnitId:'ca-app-pub-3681380281121300/7371995196',
+  //  size: AdSize.fullBanner,
+  //  targetingInfo: targetingInfo,
+  //  listener: (MobileAdEvent event) {
+  //    print("BannerAd event is $event");
+  //  },
+  //);
 
 //ad_____
   @override
   void initState(){
-    FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~4830109259");
+   // FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~4830109259");
     super.initState();
     //myBanner..load();
     
@@ -82,13 +82,13 @@ class _ExploreChallengesState extends State<ExploreChallenges> {
               height: 200,
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.only(bottom: 20.0),
-              child: NativeAdmob(
-                // Your ad unit id
-                adUnitID:"ca-app-pub-3681380281121300/7198096184",
-                //adUnitID:NativeAd.testAdUnitId,
-                controller: _nativeAdController,
-                type: NativeAdmobType.full,
-              ),
+              // child: NativeAdmob(
+              //   // Your ad unit id
+              //   adUnitID:"ca-app-pub-3681380281121300/7198096184",
+              //   //adUnitID:NativeAd.testAdUnitId,
+              //   controller: _nativeAdController,
+              //   type: NativeAdmobType.full,
+              // ),
             ),
             Image.network(
               'https://github.com/Amitpatil215/flutter_tutorial_app/blob/master/ui2.jpg?raw=true',
@@ -104,13 +104,13 @@ class _ExploreChallengesState extends State<ExploreChallenges> {
           height: 200,
           padding: EdgeInsets.all(10),
           margin: EdgeInsets.only(bottom: 20.0),
-          child: NativeAdmob(
-            // Your ad unit id
-            adUnitID:"ca-app-pub-3681380281121300/7198096184",
-            // adUnitID:NativeAd.testAdUnitId,
-            controller: _nativeAdController,
-            type: NativeAdmobType.full,
-          ),
+          // child: NativeAdmob(
+          //   // Your ad unit id
+          //   adUnitID:"ca-app-pub-3681380281121300/7198096184",
+          //   // adUnitID:NativeAd.testAdUnitId,
+          //   controller: _nativeAdController,
+          //   type: NativeAdmobType.full,
+          // ),
          )
           ],
         ),

@@ -1,9 +1,9 @@
-import 'package:firebase_admob/firebase_admob.dart';
+// import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_admob/flutter_native_admob.dart';
-import 'package:flutter_native_admob/native_admob_controller.dart';
-import 'package:flutter_native_admob/native_admob_options.dart';
+// import 'package:flutter_native_admob/flutter_native_admob.dart';
+// import 'package:flutter_native_admob/native_admob_controller.dart';
+// import 'package:flutter_native_admob/native_admob_options.dart';
 class ExploreTutorsTalk extends StatefulWidget {
   @override
   _ExploreTutorsTalkState createState() => _ExploreTutorsTalkState();
@@ -11,26 +11,26 @@ class ExploreTutorsTalk extends StatefulWidget {
 
 class _ExploreTutorsTalkState extends State<ExploreTutorsTalk> {
   //native ad
-  final _nativeAdController = NativeAdmobController();
+  //final _nativeAdController = NativeAdmobController();
   //native ad
   //ad----
-  static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-    keywords: <String>[],
-    childDirected: false,
-    testDevices: <String>[], // Android emulators are considered test devices
-  );
-  InterstitialAd myInterstitial = InterstitialAd(
-    // Replace the testAdUnitId with an ad unit id from the AdMob dash.
-    adUnitId:"ca-app-pub-3681380281121300/3101577690",
-    targetingInfo: targetingInfo,
-    listener: (MobileAdEvent event) {
-      print("InterstitialAd event is $event");
-    },
-  );
+  // static MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+  //   keywords: <String>[],
+  //   childDirected: false,
+  //   testDevices: <String>[], // Android emulators are considered test devices
+  // );
+  // InterstitialAd myInterstitial = InterstitialAd(
+  //   // Replace the testAdUnitId with an ad unit id from the AdMob dash.
+  //   adUnitId:"ca-app-pub-3681380281121300/3101577690",
+  //   targetingInfo: targetingInfo,
+  //   listener: (MobileAdEvent event) {
+  //     print("InterstitialAd event is $event");
+  //   },
+  // );
 //ad___
     @override
   void initState() {
-    FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~4830109259");
+   // FirebaseAdMob.instance.initialize(appId:"ca-app-pub-3681380281121300~4830109259");
     super.initState();
  //  myInterstitial..load();
   }
@@ -92,17 +92,17 @@ class _ExploreTutorsTalkState extends State<ExploreTutorsTalk> {
               height: 200,
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.only(bottom: 20.0),
-              child: NativeAdmob(
-                // Your ad unit id
-                adUnitID:"ca-app-pub-3681380281121300/7198096184",
-                //adUnitID:NativeAd.testAdUnitId,
-                controller: _nativeAdController,
-                type: NativeAdmobType.full,
-                options: NativeAdmobOptions(
-                  showMediaContent: true,
-                  headlineTextStyle: NativeTextStyle(color: Colors.white),
-                ),
-              ),
+              // child: NativeAdmob(
+              //   // Your ad unit id
+              //   adUnitID:"ca-app-pub-3681380281121300/7198096184",
+              //   //adUnitID:NativeAd.testAdUnitId,
+              //   controller: _nativeAdController,
+              //   type: NativeAdmobType.full,
+              //   options: NativeAdmobOptions(
+              //     showMediaContent: true,
+              //     headlineTextStyle: NativeTextStyle(color: Colors.white),
+              //   ),
+              // ),
             )
           ],
         ),
